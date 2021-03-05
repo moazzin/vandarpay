@@ -8,7 +8,7 @@ public interface VandarPayTemplate {
 
     Optional<String> doStep1(long amount, String url);
 
-    String doStep2();
+//    String doStep2();
 
     void doStep3(String token);
 

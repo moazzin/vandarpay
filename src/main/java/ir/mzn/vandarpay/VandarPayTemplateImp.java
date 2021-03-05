@@ -32,10 +32,10 @@ public class VandarPayTemplateImp implements VandarPayTemplate {
         }
     }
 
-    @Override
-    public String doStep2() {
-        return null;
-    }
+//    @Override
+//    public String doStep2() {
+//        return null;
+//    }
 
     @Override
     public void doStep3(String token) {

@@ -1,5 +1,7 @@
 package ir.mzn.vandarpay;
 
+import java.util.Optional;
+
 import static ir.mzn.vandarpay.VandarPayTemplate.IMPL;
 
 public class Facade {
@@ -7,10 +9,8 @@ public class Facade {
     public static String payKey = "vandar_pay";
     public static String api_key = "";
 
-    public String begin(long amount, String url) {
-        r1 = IMPL.doStep1(amount, url);
-//        if r1
-        return IMPL.doStep2(r1);
+    public Optional<String> begin(long amount, String url) {
+        return IMPL.doStep1(amount, url);
     }
 
     public boolean end(String token) {

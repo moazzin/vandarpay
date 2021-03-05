@@ -2,7 +2,7 @@ package ir.mzn.vandarpay;
 
 public enum Step {
     step1("https://ipg.vandar.io/api/v3/send"),
-    step2,
+//    step2(null),
     step3,
     step4;
 
