@@ -1,8 +1,9 @@
 package ir.mzn.vandarpay.model;
 
 import com.google.gson.annotations.SerializedName;
+import ir.mzn.vandarpay.IGetResultType;
 
-public class Step1In {
+public class SendParameter implements IGetResultType<SendResult> {
     @SerializedName("api_key")
     public String apiKey;
 
@@ -11,4 +12,9 @@ public class Step1In {
 
     @SerializedName("callback_url")
     public String callbackUrl;
+
+    @Override
+    public Class<SendResult> getResultType() {
+        return SendResult.class;
+    }
 }

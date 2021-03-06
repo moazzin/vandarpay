@@ -2,7 +2,7 @@ package ir.mzn.vandarpay.model;
 
 import com.google.gson.annotations.SerializedName;
 
-public class Step1Out {
+public class SendResult {
     @SerializedName("status")
     public int status;
 
